@@ -23,12 +23,3 @@
 span{
     color: #00c3ff;
 }
-
-@media only screen and (max-width: 480px) {
-    .container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
-}
