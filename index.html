@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jagvir</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1> <span class="auto-type"></span><span class="cursor">|</span></h1>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["hi :)", "i'm jagvir", "nice to meet you!", "check back soon..."],
+            typeSpeed: 90,
+            backSpeed: 40,
+            startDelay: 2000,
+            loop: true,
+            showCursor: true,
+            cursorChar: '',
+            smartBackspace: false,
+            onComplete: (self) => {
+                self.cursor.remove();
+            }
+        });
+
+        setInterval(() => {
+            const cursor = document.querySelector('.cursor');
+            cursor.style.opacity = cursor.style.opacity === '0' ? '1' : '0';
+        }, 500);
+
+    </script>
+
+</body>
+</html>
+
+
